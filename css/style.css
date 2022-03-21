@@ -10,15 +10,15 @@
 }
 .container .features {
     margin: auto;
-    width: 70%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap : 20px
+    gap : 30px
 }
 .container .features > * {
-    flex : 1 1 31%;
+    flex : 1 1 30%;
     min-width: 180px;
     max-width: 100%; 
 }
@@ -40,6 +40,7 @@ border-top :solid  4px hsl(180, 62%, 55%)
 }
 .container .features .three {
     border-top: solid 4px hsl(34, 97%, 64%);
+    margin-bottom: 100px;
 }
 .container .features .four {
     border-top: solid 4px hsl(212, 86%, 64%);
