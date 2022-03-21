@@ -7,10 +7,11 @@
 }
 .container {
     background-color: hsl(0, 0%, 98%);
+    padding: 25px;
 }
 .container .features {
     margin: auto;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,11 +37,11 @@ border-top :solid  4px hsl(180, 62%, 55%)
 }
 .container .features .two {
     border-top:solid 4px  hsl(0, 78%, 62%);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .container .features .three {
     border-top: solid 4px hsl(34, 97%, 64%);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .container .features .four {
     border-top: solid 4px hsl(212, 86%, 64%);
@@ -78,8 +79,15 @@ border-top :solid  4px hsl(180, 62%, 55%)
     line-height: 30px;
 }
 @media (max-width: 768px) {
-    .container p:nth-child(3) {
-        width: 80%;
+    .container p:nth-child(3),
+    .container > h1 {
+        width: 100%;
+    }
+    .container .features .three {
+        margin-bottom: 0;
+    }
+    .container .features .four {
+        margin-bottom: 50px;
     }
 }
 
