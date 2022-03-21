@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+ .container > p, h1 {
+    text-align: center;
+}
+.container {
+    background-color: hsl(0, 0%, 98%);
+}
+.container .features {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap : 20px
+}
+.container .features > * {
+    flex : 1 1 31%;
+    min-width: 180px;
+    max-width: 100%; 
+}
+.container .features .feature {
+ position: relative;
+ height: 220px;
+ background-color: #ffffff;
+ border-radius: 5px;
+ padding : 30px;
+ box-shadow: 0 0.25px 15px  hsl(0, 2%, 88%)
+ 
+}
+.container .features .one {
+border-top :solid  4px hsl(180, 62%, 55%)
+}
+.container .features .two {
+    border-top:solid 4px  hsl(0, 78%, 62%);
+    margin-bottom: 20px;
+}
+.container .features .three {
+    border-top: solid 4px hsl(34, 97%, 64%);
+}
+.container .features .four {
+    border-top: solid 4px hsl(212, 86%, 64%);
+}
+.container .features .feature h2 {
+    color : hsl(234, 12%, 34%);
+    font-size: 18px;
+}
+.container .features .feature p {
+    color : hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+.container .features .feature img {
+    position: absolute;
+    width: 40px;
+    right : 30px;
+    bottom : 30px
+}
+.container > p:nth-child(1){
+ font-size: 28px;
+ font-weight: 200;
+ letter-spacing: +1px;
+ color : hsl(227, 4%, 60%)
+}
+.container > h1 {
+    font-weight: 600;
+    color : hsl(234, 12%, 34%);
+    letter-spacing: -0.5px;
+}
+.container p:nth-child(3) {
+    font-size: 15px;
+    width: 40%;
+    margin:10px  auto 50px;
+    color : hsl(229, 6%, 66%);
+    line-height: 30px;
+}
+@media (max-width: 768px) {
+    .container p:nth-child(3) {
+        width: 80%;
+    }
+}
+
